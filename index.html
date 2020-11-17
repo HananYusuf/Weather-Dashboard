@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weather Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+    </head>
+
+<body>
+    <main class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-dark ">
+            <a class="navbar-brand w-100 text-center">Weather Dashboard</a>
+        </nav>
+
+        <div>
+            <div class="row container">
+                <div class="col-sm-3 sidenav">
+                    <h4>Search for a city:</h4>
+
+                    <div class="row">
+                    <div class="col-lg-10">
+                        <input class="city-input " type="text" aria-label="Search">
+                        <input id="searchBtn" type="submit" value="Search">
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-sm-9">
+                    <div class="well">
+                        <h2>City</h2>
+                        <div class="row">
+                            <div class="col-9">
+                                <p>Humidity: <span id="humidity"></span></p>
+                            </div>
+
+                            <div class="col-9">
+                                <p>Wind speed: <span id="wind-speed"></span></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                                <p>Temperature: <span id="temperature"></span></p>
+                            </div>
+
+                            <div class="col-9">
+                                <p>UV index: <span id="uv-index"></span></p>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+
+
+                    <h3>5 Day Forecast</h3>
+                    <section class="col-sm-2">
+                        <div class="col-sm-2">
+                            <h4>Date</h4>
+                            ​<picture>
+                            <img src="Assets/sunny.png" class="img-fluid img-thumbnail" alt="...">
+                            </picture>
+                            <p>Temperature:<span id="boxOne"></span></p>
+                        </div>
+                    </section>
+                    <section class="col-sm-2">
+                        <div class="col-sm-2">
+                            <h4>Date</h4>
+                            <picture>
+                            <img src="Assets/sunny.png"  hspace='5' class="img-fluid img-thumbnail" alt="...">
+                            </picture>
+                            <p>Temperature:<span id="boxTwo"></span></p>
+                        </div>
+                    </section>
+                    <section class="col-sm-2">
+                        <div class="col-sm-2">
+                            <h4>Date</h4>
+                            <picture>
+                            <img src="..." class="img-fluid img-thumbnail" alt="...">
+                            </picture>
+                            <p>Temperature:<span id="boxThree"></span></p>
+                            <hr>
+                        </div>
+                    </section>
+                    <section class="col-sm-2">
+                        <div class="col-sm-2">
+                            <h4>Date</h4>
+                            <picture>
+                            <img src="..." class="img-fluid img-thumbnail" alt="...">
+                            </picture>
+                            <p>Temperature:<span id="boxFour"></span></p>
+                            <hr>
+                        </div>
+                    </section>
+                    <section class="col-sm-2">
+                        <div class="col-sm-2">
+                            <h4>Date</h4>
+                            <picture>
+                            <source srcset="..." type="image/svg+xml">
+                            <img src="..." class="img-fluid img-thumbnail" alt="...">
+                            </picture>
+                            <p>Temperature:<span id="boxFive"></span></p>
+                            <hr>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Made with effort</p>
+    </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="./script.js"></script> 
+</body>
+
+</html>

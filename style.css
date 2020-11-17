@@ -1,0 +1,53 @@
+
+        .row.content {
+            height: 1000px
+        }
+
+
+        .sidenav {
+            background-color: #f1f1f1;
+            height: 100%;
+            margin-top: 10;
+        }
+
+
+        footer {
+            text-align: center;
+            color: black;
+            padding: 15px;
+        }
+
+
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+
+            .row.content {
+                height: auto;
+            }
+        }
+
+        .navbar {
+            background-color: black;
+            padding: 15px;
+
+
+        }
+
+        .navbar-brand {
+            color: white;
+            text-align: center;
+        }
+
+        .footer{
+            
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                opacity: .7;
+        }
+    
