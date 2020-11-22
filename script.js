@@ -1,7 +1,7 @@
 
 //a function to a
 function searchWeatherInfo(weather) {//Quering api for the weather information with full url of the open weather map app
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + weather + "&appid=d4913978d5c3e24d361b4f331107b32b&units=imperial";
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + weather + "&appid=d4913978d5c3e24d361b4f331107b32b&units=imperial";
     $.ajax({
         url: queryURL,
         method: "GET"
@@ -15,7 +15,7 @@ function searchWeatherInfo(weather) {//Quering api for the weather information w
 
         //another ajax function to call the api for uvindex information 
         $.ajax({
-            url: "http://api.openweathermap.org/data/2.5/uvi?lat=" + response.coord.lat + "&lon=" + response.coord.lon + "&appid=d4913978d5c3e24d361b4f331107b32b"
+            url: "https://api.openweathermap.org/data/2.5/uvi?lat=" + response.coord.lat + "&lon=" + response.coord.lon + "&appid=d4913978d5c3e24d361b4f331107b32b"
         }).then(function(UVIndexRes){
             console.log(UVIndexRes)
             var uvI = $("#uv-index").text(UVIndexRes.value);
@@ -23,7 +23,7 @@ function searchWeatherInfo(weather) {//Quering api for the weather information w
         })
     });
     //five days forecast query url 
-    var fiveDayURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + weather + "&appid=d4913978d5c3e24d361b4f331107b32b&units=imperial";
+    var fiveDayURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + weather + "&appid=d4913978d5c3e24d361b4f331107b32b&units=imperial";
     $.ajax({
         url: fiveDayURL,
         method: "GET"
